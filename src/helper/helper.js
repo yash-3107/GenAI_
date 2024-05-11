@@ -13,6 +13,7 @@ function helper(setshowModal) {
             let newdiv = document.createElement('div');
             let newHeading = document.createElement('h3');
             let para = document.createElement('p');
+            let anchor = document.createElement('a');
             let button1 = document.createElement('button');
             button1.setAttribute('id',"push");
             newHeading.textContent = inputNameValue;
@@ -20,7 +21,10 @@ function helper(setshowModal) {
             button1.textContent = "Edit Stack";
             newdiv.appendChild(newHeading);
             newdiv.appendChild(para);
-            newdiv.appendChild(button1);
+            anchor.appendChild(button1);
+            anchor.setAttribute("href","../components/5thpage/fifthpage.jsx");
+            
+            newdiv.appendChild(anchor);
             componentsAdd.appendChild(newdiv);
         }
     }

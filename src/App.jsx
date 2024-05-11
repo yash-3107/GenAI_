@@ -5,7 +5,6 @@ import Newstack from './components/createNewStack/createStack.jsx'
 import Popup from './components/pop-up-box/pop-up.jsx'
 import { useState } from "react"
 import helper from "./helper/helper.js"
-
 function App() {
     const [showModal, setShowModal] = useState(false);
 

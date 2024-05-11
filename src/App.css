@@ -50,3 +50,27 @@ hr {
    background-color: #ffffff; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for the modal */
   }
+#components>div{
+    background-color: #ffffff;
+    font-family: Inter;
+    border:1px solid rgb(216, 216, 216);
+    border-radius: 3px;
+    width:12em;
+    margin-right: 20px;
+    padding:26px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#components{
+    display: flex;
+    position:relative;
+}
+#push{
+    border: 1px solid rgb(213, 213, 213);
+    background-color: #fffdfd;
+    padding:6px;
+    width:9em;
+    text-align: left;
+    font-family: Inter;
+    float:right;
+
+}

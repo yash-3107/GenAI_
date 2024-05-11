@@ -1,11 +1,12 @@
 import './design.css'
-function secondInstance(){
+import helper from "../../helper/helper.js";
+function secondInstance({play,forCancelButton,updater}){
    return (
     
             <div className='parentofSecondInstance'>
               <div className='headOfpopup'>
                 <h4 className='headingOfpopup'>Create New Stack</h4>
-                <button style={{backgroundColor:'white',marginRight:'10px',border:'none'}}>X</button>
+                <button  onClick={updater} style={{backgroundColor:'white',marginRight:'10px',border:'none'}}>X</button>
               </div>
 
               <p className='name1'>Name :</p>
@@ -15,8 +16,8 @@ function secondInstance(){
               <input className='desc2' type="text" maxLength={200} autoFocus/>
 
               <div className='forButtons'>
-                  <button id="one" >Cancel</button>
-                  <button id ="two" >Create</button>
+                  <button id="one" onClick={forCancelButton} >Cancel</button>
+                  <button id ="two" onClick={play}>Create</button>
               </div>
           </div>
   

@@ -26,10 +26,3 @@
 Link{
     text-decoration: none;
 }
-.modal{
-    height:80vh;
-    width:60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

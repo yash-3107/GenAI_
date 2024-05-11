@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import './createStack.css'
-function createStacki(){
+function createStacki({play}){
     
 return(
-         <div className = "New_Stack" >
+         <div className = "New_Stack" onClick={()=>play()}>
              <p className="text">+ New Stack</p>
          </div>    
 )

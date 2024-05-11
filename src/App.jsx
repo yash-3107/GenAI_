@@ -5,20 +5,27 @@ import Newstack from './components/createNewStack/createStack.jsx'
 import Popup from './components/pop-up-box/pop-up.jsx'
 import { useState } from "react"
 function App() {
-      const [flag,flagSetter] = useState(false)
-      function play(){
-            flagSetter(!flag)
-            return <SecondInstance/>
-            
+      const [showModal,setshowModal] = useState(false);
+      function updater(){
+            setshowModal(!showModal);
+            console.log("hello")
       }
 return (
         <div className="parent">
            <Genai />
-           <div className ="sub_header">
+           <div className ="sub_header" onClick={updater}>
                  <p className="myStacks">My Stacks</p>
-                 <Newstack play={play}/>
+                 <Newstack/>
            </div>
            <hr />
+                 {showModal && (
+                  <div className="modal-overlay">
+                  <div className="modal-content">
+                    <SecondInstance />
+                  </div>
+                </div>
+               )}
+
         </div>
         
       )

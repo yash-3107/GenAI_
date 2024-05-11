@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .parent{
-    
+    width:97vw;
+    height:100vh;
     display:flex;
     flex-direction: column;
     
@@ -33,3 +34,19 @@ hr {
     border:none;
     background-color:#E4E8EE;
 }
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 95, 95, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+   background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for the modal */
+  }

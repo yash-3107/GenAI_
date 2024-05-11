@@ -1,10 +1,11 @@
 import './design.css'
 function secondInstance(){
    return (
-          <div className='parentofSecondInstance'>
+    
+            <div className='parentofSecondInstance'>
               <div className='headOfpopup'>
                 <h4 className='headingOfpopup'>Create New Stack</h4>
-                <button style={{backgroundColor:'white',marginRight:'10px'}}>X</button>
+                <button style={{backgroundColor:'white',marginRight:'10px',border:'none'}}>X</button>
               </div>
 
               <p className='name1'>Name :</p>
@@ -18,6 +19,8 @@ function secondInstance(){
                   <button id ="two" >Create</button>
               </div>
           </div>
+  
+        
    )
 }
 export default secondInstance

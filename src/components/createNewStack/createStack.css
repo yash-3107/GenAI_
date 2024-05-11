@@ -5,7 +5,7 @@
     gap: 10px;
     border-radius: 8px 8px 8px 8px;
     background-color:#44924C;
-   
+   text-decoration: none;
 
 }
 .text{
@@ -22,4 +22,14 @@
     text-align: left;
     font-size: 14px;
     color:rgb(255, 255, 255);
+}
+Link{
+    text-decoration: none;
+}
+.modal{
+    height:80vh;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

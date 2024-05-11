@@ -3,8 +3,8 @@ function helper(setshowModal) {
     let paraContent = document.getElementsByClassName("desc2");
 
     if (inputName.length > 0 && paraContent.length > 0) {
-        let inputNameValue = inputName[0].value;
-        let paraContentValue = paraContent[0].value;
+        let inputNameValue = inputName[0].textContent;
+        let paraContentValue = paraContent[0].textContent;
 
         if (inputNameValue !== undefined) {
             setshowModal(false); 

@@ -1,12 +1,12 @@
 import './design.css'
 import helper from "../../helper/helper.js";
-function secondInstance({play,forCancelButton,updater}){
+function secondInstance({play,forCancelButton,closed}){
    return (
     
             <div className='parentofSecondInstance'>
               <div className='headOfpopup'>
                 <h4 className='headingOfpopup'>Create New Stack</h4>
-                <button  onClick={updater} style={{backgroundColor:'white',marginRight:'10px',border:'none'}}>X</button>
+                <button  onClick={closed} style={{backgroundColor:'white',marginRight:'10px',border:'none'}}>X</button>
               </div>
 
               <p className='name1'>Name :</p>

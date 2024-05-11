@@ -31,7 +31,7 @@ function App() {
                     setShowModal(!showModal);
                 }}>
                     <div className="modal-content">
-                        <SecondInstance play={handleSubmit} forCancelButton={updater} close={updater}/>
+                        <SecondInstance play={handleSubmit} forCancelButton={updater} closed={updater}/>
                     </div>
                 </div>
             )}

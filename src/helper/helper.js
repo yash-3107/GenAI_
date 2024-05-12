@@ -22,7 +22,7 @@ function helper(setshowModal) {
             newdiv.appendChild(newHeading);
             newdiv.appendChild(para);
             anchor.appendChild(button1);
-            anchor.setAttribute("href","../components/5thpage/fifthpage.jsx");
+            anchor.setAttribute("href","/src/opener.jsx");
             
             newdiv.appendChild(anchor);
             componentsAdd.appendChild(newdiv);

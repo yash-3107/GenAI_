@@ -10,10 +10,10 @@ function secondInstance({play,forCancelButton,closed}){
               </div>
 
               <p className='name1'>Name :</p>
-              <input className="name2" type="text" maxLength={30}/>
+              <input className="name2" type="text" maxLength={30} id="name"/>
 
               <p className='desc1'>Description:</p>
-              <input className='desc2' type="text" maxLength={200} autoFocus/>
+              <input className='desc2' type="text" maxLength={200} id="description" style={{textAlign: 'left'}}/>
 
               <div className='forButtons'>
                   <button id="one" onClick={forCancelButton} >Cancel</button>
